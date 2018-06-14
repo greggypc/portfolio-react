@@ -10,7 +10,7 @@ import NotFound from './NotFound';
 
 const Router = () => (
   <BrowserRouter>
-    <div>
+    <React.Fragment>
       <Nav />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -20,7 +20,7 @@ const Router = () => (
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
-    </div>
+    </React.Fragment>
   </BrowserRouter>
 );
 

@@ -1,0 +1,56 @@
+html,
+body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h1 {
+  letter-spacing: -15px;
+  font-family: Open Sans;
+  color: white;
+  text-align: center;
+  font-size: 150px;
+  font-weight: 800;
+  line-height: 200px;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://www.imagesfromtexas.com/images/xl/South-Rim-Big-Bend-Panorama-1.jpg);
+  background-color: rgb(78, 78, 77);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
